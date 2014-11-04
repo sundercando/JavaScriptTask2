@@ -1,0 +1,77 @@
+<html>
+<head>
+
+<script>
+
+function loadNextImg(what){
+ 
+ what = "../images/Desert.jpg"
+ 
+ alert("*** "+what);
+  
+  var outImage="previewField";
+  var defaultPic="../images/Penguins.jpg";
+  var globalPic=new Image();
+  
+   imageFlag = true;
+ 
+ if(imageFlag)
+  {
+   //globalPic.src=what.files[0].getAsDataURL();
+   globalPic.src = what;
+   imageFlag=false;
+   
+    var field1=document.getElementById("imageName");
+	
+	
+    field1.value=globalPic.src;
+	
+	alert("global Pic "+globalPic.src);
+   alert("*********  "+field1.value);
+  }
+  else
+   {
+      globalPic.src = defaultPic;
+	  
+	  var field=document.getElementById(outImage);
+      field.value = globalPic.src;
+	  
+   }
+   //setTimeout("applyChanges()",200);
+ }
+ 
+ function applyChanges() {
+   
+ var field1=document.getElementById("imageName");
+ field1.value=globalPic.src;
+ 
+    var field=document.getElementById(outImage);
+     field.value = globalPic.src;
+ 
+ }
+
+
+</script>
+</head>
+
+<body>
+
+<form>
+
+ <div id = "image1">
+		<img id="previewField" src="../images/vodo.jpg" alt="my image" style="width:152px;height:229px"/>
+	</div>
+
+<div>
+  <img id="imageName" src="../images/removeButton.jpg" alt="your image"/>
+</div>
+
+<input type="button" onClick="loadNextImg('../images/Penguins.jpg');">
+
+
+</form>
+
+</body>
+</html>
+
+

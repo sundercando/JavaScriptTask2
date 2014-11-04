@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="C:\Demo_Project\MyBookApp\scripts\profile_test.js"></script>
+
+</head>
+<body>
+
+<form name='registration' action="../index.html" method="post" name="form">
+<table width="100%" border="0">
+  <tr>
+    <td colspan="2" bgcolor="#b5dcb3">
+      <h1>My Book</h1>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td bgcolor="#b5dcb3" width="10%">
+      <h3 background-color: blue>Feed </h3> 
+      <h3 background-color = "red" >Profile</h3>
+      
+    </td>
+    <td bgcolor="#eee" width="50%" height="520">
+
+<table>
+<tr><td align="right">
+ <label for="username">Name:</label> 
+ <input type="text" name="username" size="50" /> <br>
+
+ <label for="age">Age:</label> 
+ <input type="text" name="age" size="50" /> <br>
+
+ <label for="phone">Phone:</label> 
+ <input type="text" name="phone" size="50" /> <br>
+
+ <label for="email">Email:</label> 
+ <input type="text" name="email" size="50" /> <br>
+
+ <label for="address">Address:</label> 
+ <textarea name="address" id="address" size="50" width="50"> </textarea><br> 
+  </td> 
+ 
+ <td> <div id = "image1">
+		<img id="previewField" src="../images/vodo.jpg" alt="your image" style="width:152px;height:229px"/>
+	</div>
+	
+</td> </tr>
+ 
+ <tr> <td>  </td> <td> <input type = "button" value = "Save" onclick = "formValidation()" style="margin-left: -370px;"/> </td>  </tr>
+ <tr> <td> </td> <td> 
+       <div>
+			<input type = "text" id="imageName" placeholder = "Profile image" readonly="readonly" style="margin-left: -155px;"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     		<input type="file" id="imageFile" name="imageFile" accept="image/*" onchange="loadImages(this)"/>
+		</div>
+
+ </td>  </tr>
+	
+
+</table> 
+	
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#b5dcb3">
+      <center>
+      Talent Improving exercise, OFS
+      </center>
+    </td>
+  </tr>
+</table>
+<form>
+</body>
+</html>
